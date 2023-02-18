@@ -6,9 +6,11 @@
   box-sizing: border-box;
 }
 
-section {
+.container {
   background-color: rgb(241, 238, 238);
   height: 46vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .container h1 {
@@ -28,33 +30,41 @@ section {
   margin-bottom: 2rem;
 }
 
-.container form {
+form {
   display: flex;
-  justify-content: center;
   flex-direction: column;
-  align-items: center;
 }
 
 label {
-  text-align: center;
   display: flex;
-  gap: 5rem;
-  justify-content: end;
-  margin-right: 3rem;
-  align-items: start;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
 }
 
 input {
+  width: 50%;
   border-radius: 5px;
   padding: 0.5rem;
   border: none;
-  margin-left: 1rem;
-  justify-content: center;
+  max-width: 100%;
+}
+
+.text1 {
+  margin-left: 1.2rem;
+}
+
+.text2 {
+  margin-left: 1.1rem;
+}
+
+.text3 {
+  margin-left: 0;
 }
 
 button {
   align-self: flex-end;
-  margin-right: 9rem;
+  margin-right: 20rem;
   padding: 0.5rem;
   border-radius: 5px;
   color: #f8f8fa;
