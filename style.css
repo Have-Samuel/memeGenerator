@@ -35,18 +35,25 @@ form {
 
 label {
   display: flex;
-  gap: 14rem;
-  justify-content: center;
-  align-items: start;
+  gap: 10rem;
+  justify-content: end;
+  margin-right: 5rem;
 }
 
 input {
   border-radius: 5px;
   padding: 0.5rem;
   border: none;
+  margin-left: 1rem;
 }
 
 button {
   align-self: flex-end;
-  margin-right: 3rem;
+  margin-right: 5rem;
+  padding: 0.5rem;
+  border-radius: 5px;
+  color: #f8f8fa;
+  background-color: #1088d8;
+  border: none;
+  cursor: pointer;
 }
