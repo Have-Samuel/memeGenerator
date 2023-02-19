@@ -10,19 +10,23 @@ function imageCreator(imgURL, text1, text2) {
   const memePic = document.createElement('image');
   const memeText = document.createElement('text');
 
-  memeDiv.style.position = 'relative';
-  memePic.innerHTML = imgURL.value;
+  // memeDiv.style.position = 'relative';
+  // memePic.innerHTML = imgURL.value;
   memePic.innerText = text1;
-  memePic.innerText = text2.value;
+  memePic.innerText = text2;
   memePic.style.fontSize = '80px';
   memePic.style.borderRadius = '8px';
-  memePic.style.color = 'Red';
-  memeDiv.appendChild(memePic, memeText);
+  memePic.style.color = 'magenta';
+  memeDiv.appendChild(memePic);
   return memeDiv;
 }
 
 memeForm.addEventListener('submit', (e) => {
   e.preventDefault();
-  const newElemet = imageCreator(urlInput.value, topTextInput.value, downTextInput.value);
+  const newElemet = imageCreator(
+    urlInput.value,
+    topTextInput.value,
+    downTextInput.value
+  );
   outPut.appendChild(newElemet);
 });
