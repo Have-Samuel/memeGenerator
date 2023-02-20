@@ -9,7 +9,7 @@ function imageCreator(imgURL, text1, text2) {
   const memeDiv = document.createElement('div');
   const memePic = document.createElement('image');
   // const memeText = document.createElement('text');
-
+  memePic.innerText = imgURL;
   // memeDiv.style.position = 'relative';
   // memePic.innerHTML = imgURL.value;
   memePic.innerText = text1;

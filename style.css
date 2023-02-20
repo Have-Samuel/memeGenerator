@@ -30,7 +30,7 @@
   margin-bottom: 2rem;
 }
 
-form {
+/* form {
   display: flex;
   flex-direction: column;
 }
@@ -42,15 +42,15 @@ label {
   gap: 3rem;
 }
 
-input {
+/* input {
   width: 50%;
   border-radius: 5px;
   padding: 0.5rem;
   border: none;
   max-width: 100%;
-}
+} */ */
 
-.text1 {
+/* .text1 {
   margin-left: 1.2rem;
 }
 
@@ -60,7 +60,7 @@ input {
 
 .text3 {
   margin-left: 0;
-}
+} */
 
 button {
   align-self: flex-end;
@@ -73,4 +73,27 @@ button {
   border: none;
   cursor: pointer;
   margin-top: 1rem;
+}
+
+#memeOutput {
+  margin: 3.5rem auto;
+  width: 80%;
+  background-color: magenta;
+}
+
+.meme-generator {
+  margin: 20px auto;
+  width: 400px;
+  font-family: sans-serif;
+}
+
+.meme-generator label {
+  display: block;
+  margin-bottom: 1rem;
+  font-weight: bolder;
+}
+
+.meme-generator input {
+  width: 100%;
+  margin-bottom: 1rem;
 }
