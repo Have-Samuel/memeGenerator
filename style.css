@@ -35,38 +35,39 @@
 } */
 
 #memeOutput {
-  margin-top: 3rem;
-  background-color: rgb(177, 169, 177);
+  margin-top: 5rem;
   display: flex;
   gap: 1rem;
   align-items: center;
   justify-content: center;
-  padding: 1rem;
+  /* padding: 1rem; */
   border-radius: 5px;
+  display: none;
 }
 
 .top {
   z-index: 20;
   position: absolute;
   color: magenta;
-  top: 570px;
+  top: 480px;
 }
 
 .bottom {
   z-index: 20;
   position: absolute;
   color: magenta;
-  bottom: -105px;
-  left: 800px;
+  bottom: 115px;
+  left: 688px;
 }
 
 .memeImg {
-  position: relative;
-  z-index: 10;
-  width: 70%;
-  height: 70%;
-  object-fit: contain;
-  border-radius: 5px;
+  /* position: relative; */
+  /* z-index: 10; */
+  /* width: 30%; */
+  /* height: 100%; */
+  object-fit: fil;
+  border-radius: 20px;
+  border: 2px solid red;
 }
 
 .meme-generator {
