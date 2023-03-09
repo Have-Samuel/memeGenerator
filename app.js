@@ -9,6 +9,7 @@ let src = urlInput.getAttribute('src');
 src = 'https://i.imgflip.com/1bij.jpg';
 urlInput.setAttribute('src', src);
 
+
 memeDisplay.setAttribute('src', src);
 memeDisplay.classList = 'memeImg';
 
