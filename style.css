@@ -30,41 +30,78 @@
   margin-bottom: 2rem;
 }
 
-form {
-  display: flex;
+/* label {
   flex-direction: column;
-}
+} */
 
-label {
+#memeOutput {
+  margin-top: 5rem;
   display: flex;
+  gap: 1rem;
   align-items: center;
   justify-content: center;
-  gap: 3rem;
+  border-radius: 5px;
+
+  /* display: none;
+  padding: 1rem; */
 }
 
-input {
-  width: 50%;
+.top {
+  z-index: 20;
+  position: absolute;
+  color: magenta;
+  top: 480px;
+}
+
+.bottom {
+  z-index: 20;
+  position: absolute;
+  color: magenta;
+  bottom: 115px;
+  left: 688px;
+}
+
+.memeImg {
+  /* position: relative;
+  z-index: 10;
+  width: 30%;
+  height: 100%; */
+  object-fit: fill;
+  border-radius: 20px;
+  border: 2px solid red;
+}
+
+.meme-generator {
+  display: flex;
+  flex-direction: column;
+  margin: 0.7rem auto;
+  width: 80%;
+  font-family: sans-serif;
+  font-size: 1.2rem;
+}
+
+.meme-generator label {
+  display: flex;
+  flex-direction: column;
+  font-weight: bolder;
+}
+
+label input {
+  margin-bottom: 0.5rem;
   border-radius: 5px;
   padding: 0.5rem;
   border: none;
-  max-width: 100%;
 }
 
-.text1 {
-  margin-left: 1.2rem;
-}
+.meme-generator button {
+  width: 10%;
 
-.text2 {
-  margin-left: 1.1rem;
-}
+  /* display: flex;
+  align-items: center;
+  justify-content: end;
+  flex-direction: column; */
 
-.text3 {
-  margin-left: 0;
-}
-
-button {
-  align-self: flex-end;
-  margin-right: 20rem;
+  /* margin-left: 56rem; */
   padding: 0.5rem;
   border-radius: 5px;
   color: #f8f8fa;
@@ -72,5 +109,4 @@ button {
   background-color: #1088d8;
   border: none;
   cursor: pointer;
-  margin-top: 1rem;
 }
