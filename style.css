@@ -34,7 +34,7 @@
   flex-direction: column;
 } */
 
-#memeOutput {
+.display {
   margin-top: 5rem;
   display: flex;
   gap: 1rem;

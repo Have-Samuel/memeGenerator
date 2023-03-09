@@ -5,7 +5,7 @@ const bottomTextInput = document.querySelector('input[name="memeBottomText"]');
 const memeDisplay = document.querySelector('#memeOutput');
 const addMemeBtn = document.querySelector('#memeOutput');
 
-let src = memeDisplay.getAttribute('src');
+let src = urlInput.getAttribute('src');
 src = 'https://i.imgflip.com/1bij.jpg';
 urlInput.setAttribute('src', src);
 
