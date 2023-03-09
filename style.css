@@ -35,12 +35,40 @@
 } */
 
 #memeOutput {
-  background-color: rgb(177, 169, 177);
+  /* background-color: magenta; */
+  /* background-color: rgb(177, 169, 177);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   padding: 1rem;
+  border-radius: 5px; */
+}
+
+.top {
+  font-size: 2rem;
+  font-weight: 500;
+  font-family: 'Poppins', sans-serif;
+  color: #2323da;
+  text-align: center;
+  text-shadow: 1px 1px 8px;
+  margin-bottom: 2rem;
+}
+
+.bottom {
+  font-size: 2rem;
+  font-weight: 500;
+  font-family: 'Poppins', sans-serif;
+  color: #e41c1c;
+  text-align: center;
+  text-shadow: 1px 1px 8px;
+  margin-bottom: 2rem;
+}
+
+.memeImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
   border-radius: 5px;
 }
 

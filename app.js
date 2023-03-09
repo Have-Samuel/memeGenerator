@@ -3,20 +3,20 @@ const urlInput = document.querySelector('input[name="memeURL"]');
 const topTextInput = document.querySelector('input[name="memeTopText"]');
 const bottomTextInput = document.querySelector('input[name="memeBottomText"]');
 const memeDisplay = document.querySelector('#memeOutput');
-const addMemeBtn = document.querySelector('#memeOutput');
+// const addMemeBtn = document.querySelector('#memeOutput');
 
 function imageCreator(imgURL, topText, bottomText) {
   const memeDiv = document.createElement('div');
-  const memePic = document.createElement('image');
+  const memePic = document.createElement('img');
   // const memeText = document.createElement('text');
   // memePic.innerText = imgURL;
   // memeDiv.style.position = 'relative';
-  memePic.innerHTML = imgURL.value;
+  // memePic.innerHTML = imgURL.value;
   memePic.innerText = topText;
   memePic.innerText = bottomText;
   memePic.style.fontSize = '80px';
   memePic.style.borderRadius = '8px';
-  // memePic.style.color = 'magenta';
+  memePic.style.color = 'magenta';
   memeDiv.appendChild(memePic);
   return memeDiv;
 }
