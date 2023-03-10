@@ -20,11 +20,15 @@ const memeGenetator = () => {
   memeImage.alt = 'Meme Image';
 
   const memeTopText = document.createElement('h2');
-  memeTopText.classList.add('top');
+  // memeTopText.getContext('2d');
+
+  // memeTopText.classList.add('top');
   memeTopText.innerText = topText;
 
   const memeBottomText = document.createElement('h2');
-  memeBottomText.classList.add('bottom');
+  // memeBottomText.getContext('2d');
+
+  // memeBottomText.classList.add('bottom');
   memeBottomText.innerText = bottomText;
 
   memeDiv.append(memeImage, memeTopText, memeBottomText);
