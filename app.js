@@ -4,8 +4,6 @@ const topTextInput = document.querySelector('input[name="memeTopText"]');
 const bottomTextInput = document.querySelector('input[name="memeBottomText"]');
 const memeDisplay = document.querySelector('#memeOutput');
 
-let image;
-
 const memeGenetator = () => {
   const memeURL = urlInput.value;
   const topText = topTextInput.value;
