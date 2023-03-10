@@ -8,10 +8,9 @@ const memeGenetator = () => {
   const memeURL = urlInput.value;
   const topText = topTextInput.value;
   const bottomText = bottomTextInput.value;
-  // memeDisplay.innerHTML = '';
 
   const memeDiv = document.createElement('div');
-  // memeDiv.classList.add('');
+  memeDiv.classList = 'memeDiv';
 
   const memeImage = document.createElement('img');
 
