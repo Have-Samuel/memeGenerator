@@ -15,10 +15,11 @@ const memeGenetator = () => {
   const memeImage = document.createElement('img');
 
   memeImage.src = memeURL;
-  // memeImage.classList.add('memeImg');
+  memeImage.classList.add('memeImg');
   memeImage.alt = 'Meme Image';
 
   const memeTopText = document.createElement('h2');
+  memeTopText.innerHTML += `<span class="top">${topText}</span>`;
   memeTopText.classList.add('top');
   memeTopText.innerText = topText;
 
