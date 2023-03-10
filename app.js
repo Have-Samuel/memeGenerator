@@ -4,31 +4,29 @@ const topTextInput = document.querySelector('input[name="memeTopText"]');
 const bottomTextInput = document.querySelector('input[name="memeBottomText"]');
 const memeDisplay = document.querySelector('#memeOutput');
 
+let image;
+
 const memeGenetator = () => {
   const memeURL = urlInput.value;
   const topText = topTextInput.value;
   const bottomText = bottomTextInput.value;
-
   // memeDisplay.innerHTML = '';
 
   const memeDiv = document.createElement('div');
   // memeDiv.classList.add('');
 
   const memeImage = document.createElement('img');
+
   memeImage.src = memeURL;
   // memeImage.classList.add('memeImg');
   memeImage.alt = 'Meme Image';
 
   const memeTopText = document.createElement('h2');
-  // memeTopText.getContext('2d');
-
-  // memeTopText.classList.add('top');
+  memeTopText.classList.add('top');
   memeTopText.innerText = topText;
 
   const memeBottomText = document.createElement('h2');
-  // memeBottomText.getContext('2d');
-
-  // memeBottomText.classList.add('bottom');
+  memeBottomText.classList.add('bottom');
   memeBottomText.innerText = bottomText;
 
   memeDiv.append(memeImage, memeTopText, memeBottomText);
