@@ -34,8 +34,9 @@ const memeGenetator = () => {
 
   // Delete the meme
   const deleteButton = document.createElement('button');
-  deleteButton.innerText = 'Delete';
+  deleteButton.innerText = '';
   deleteButton.classList.add('deleteButton');
+  deleteButton.style.display = 'block';
   memeDiv.appendChild(deleteButton);
 
   deleteButton.addEventListener('click', () => {
