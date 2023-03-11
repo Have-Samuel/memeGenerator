@@ -20,9 +20,6 @@ const memeGenetator = () => {
   memeImage.classList.add('memeImg');
   memeImage.alt = 'Meme Image';
 
-  //  Reset the form
-  memeForm.reset();
-
   const memeTopText = document.createElement('h2');
   memeTopText.innerHTML += `<span class="top">${topText}</span>`;
   memeTopText.classList.add('top');
@@ -35,7 +32,18 @@ const memeGenetator = () => {
   memeDiv.append(memeImage, memeTopText, memeBottomText);
   memeDisplay.appendChild(memeDiv);
 
-  // memeForm.reset();
+  // Delete the meme
+  const deleteButton = document.createElement('button');
+  deleteButton.innerText = 'Delete';
+  deleteButton.classList.add('deleteButton');
+  memeDiv.appendChild(deleteButton);
+
+  deleteButton.addEventListener('click', () => {
+    memeDiv.remove();
+  });
+
+  //  Reset the form
+  memeForm.reset();
 };
 
 memeForm.addEventListener('submit', (e) => {
