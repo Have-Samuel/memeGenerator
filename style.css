@@ -91,6 +91,23 @@
   max-width: 500px;
 }
 
+.deleteButton {
+  z-index: 50;
+  position: absolute;
+  top: 11px;
+  right: 0;
+  background-color: #1088d8;
+  color: #f8f8fa;
+  font-family: 'Poppins', sans-serif;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  border-radius: 20px;
+  /* border: 2px solid red; */
+  height: 500px;
+  width: 600px;
+}
+
 .meme-generator {
   display: flex;
   flex-direction: column;
