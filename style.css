@@ -34,20 +34,17 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 1rem;
   margin: 0.7rem auto;
-  width: 80%;
-  font-family: sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 #memeOutput {
-  /* margin-top: 5rem; */
+  position: relative;
   display: flex;
   gap: 1rem;
   align-items: center;
   justify-content: center;
   border-radius: 5px;
-  /* padding: 1rem; */
   border: 5px solid #1088d8;
 }
 
@@ -59,7 +56,7 @@
   font-size: 2.5rem;
   font-family: 'Poppins', sans-serif;
   text-shadow: 5px 5px 8px;
-  top: 480px;
+  top: 10px;
   color: antiquewhite;
   -webkit-text-stroke: 2px black;
 }
@@ -72,7 +69,7 @@
   text-decoration: double;
   text-shadow: 5px 5px 8px;
   font-family: 'Poppins', sans-serif;
-  bottom: -105px;
+  bottom: 11px;
   color: antiquewhite;
   -webkit-text-stroke: 2px black;
   stroke-linejoin: round;
