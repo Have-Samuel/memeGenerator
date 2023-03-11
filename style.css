@@ -71,14 +71,16 @@
 }
 
 #memeOutput {
+  /* max-width: 100%; */
   width: fit-content;
   position: relative;
   display: flex;
-  gap: 1rem;
+  /* gap: 1rem; */
   align-items: center;
   justify-content: center;
   border-radius: 5px;
-  border: 5px solid #1088d8;
+  border: 2px solid #1088d8;
+  margin-top: 7.7rem;
 }
 
 .memeImg {
@@ -86,24 +88,18 @@
   z-index: 10;
   object-fit: fill;
   border-radius: 20px;
-  border: 2px solid red;
+  border: 2px solid rgb(183, 0, 255);
   height: 550px;
   width: 600px;
   max-width: 500px;
   margin: 0 1rem;
 }
 
-/* .memeImg:hover {
-  background-color: #1088d8;
-  opacity: 0.3;
-  cursor: pointer;
-} */
-
 .deleteButton {
   z-index: 50;
   position: absolute;
   top: 10px;
-  background-color: #0d93ec;
+  background-color: #b4d7ee;
   opacity: 0.3;
   font-family: 'Poppins', sans-serif;
   border: none;
@@ -113,7 +109,7 @@
   height: 550px;
   width: 605px;
   max-width: 500px;
-  /* display: none; */
+  display: none;
 }
 
 .meme-generator {
