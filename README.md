@@ -10,7 +10,11 @@ Your generator should consist of a form that accepts a link to an image, text fo
 - When the meme form is submitted, values in the form inputs should be cleared.
 - Be sure to style your meme generator! It should be functional but also look nice.
 
+<<<<<<< HEAD
 #### Only use vanilla JavaScript only: no frameworks/third-party libraries.
 
 ### Go Live
 [Live Link](https://mem-gen.netlify.app/) 
+=======
+#### Only use vanilla JavaScript only: no frameworks/third-party libraries.
+>>>>>>> 528902df18da3425156d3fc232a1a15560ff48e0
