@@ -8,7 +8,7 @@
 
 .container {
   background-color: rgb(241, 238, 238);
-  height: 46vh;
+  height: 60vh;
   display: flex;
   flex-direction: column;
 }
@@ -30,45 +30,82 @@
   margin-bottom: 2rem;
 }
 
-/* label {
-  flex-direction: column;
-} */
-
-#memeOutput {
-  margin-top: 5rem;
+.memeDiv {
   display: flex;
-  gap: 1rem;
   align-items: center;
   justify-content: center;
-  border-radius: 5px;
-
-  /* display: none;
-  padding: 1rem; */
+  margin: 1rem;
+  font-family: 'Poppins', sans-serif;
 }
 
 .top {
   z-index: 20;
+  text-align: center;
   position: absolute;
-  color: magenta;
-  top: 480px;
+  font-size: 2.5rem;
+  font-family: 'Poppins', sans-serif;
+  text-shadow: 5px 5px 8px;
+  top: 15px;
+  color: antiquewhite;
+  -webkit-text-stroke: 2px black;
+  width: 500px;
+  height: 500px;
 }
 
 .bottom {
+  width: 500px;
+  height: 500px;
   z-index: 20;
+  text-align: center;
   position: absolute;
-  color: magenta;
-  bottom: 115px;
-  left: 688px;
+  font-size: 2.5rem;
+  text-decoration: double;
+  text-shadow: 5px 5px 8px;
+  font-family: 'Poppins', sans-serif;
+  bottom: -420px;
+  color: antiquewhite;
+  -webkit-text-stroke: 2px black;
+  stroke-linejoin: round;
+}
+
+#memeOutput {
+  width: fit-content;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  border: 2px solid #1088d8;
+  margin-top: 7.7rem;
 }
 
 .memeImg {
-  /* position: relative;
+  position: relative;
   z-index: 10;
-  width: 30%;
-  height: 100%; */
   object-fit: fill;
   border-radius: 20px;
-  border: 2px solid red;
+  border: 2px solid rgb(183, 0, 255);
+  height: 550px;
+  width: 600px;
+  max-width: 500px;
+  margin: 0 1rem;
+}
+
+.deleteButton {
+  z-index: 50;
+  position: absolute;
+  top: 10px;
+  background-color: #b4d7ee;
+  opacity: 0.3;
+  font-family: 'Poppins', sans-serif;
+  border: none;
+  cursor: pointer;
+  border-radius: 20px;
+  margin: 0.4rem 2rem;
+  height: 550px;
+  width: 605px;
+  max-width: 500px;
+  display: none;
 }
 
 .meme-generator {
@@ -84,24 +121,24 @@
   display: flex;
   flex-direction: column;
   font-weight: bolder;
+  justify-content: space-between;
+  font-family: 'Poppins', sans-serif;
 }
 
-label input {
-  margin-bottom: 0.5rem;
+.meme-generator input {
+  display: flex;
+  margin-bottom: 0.8rem;
   border-radius: 5px;
   padding: 0.5rem;
   border: none;
+  width: 100%;
+  font-size: 1.2rem;
+  outline: none;
 }
 
 .meme-generator button {
   width: 10%;
-
-  /* display: flex;
-  align-items: center;
-  justify-content: end;
-  flex-direction: column; */
-
-  /* margin-left: 56rem; */
+  margin-left: 56rem;
   padding: 0.5rem;
   border-radius: 5px;
   color: #f8f8fa;
