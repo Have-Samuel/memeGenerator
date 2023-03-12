@@ -38,6 +38,12 @@
   font-family: 'Poppins', sans-serif;
 }
 
+/* .memeDiv:hover {
+  background-color: rgb(183, 0, 255);
+  border-radius: 20px;
+  cursor: pointer;
+} */
+
 .top {
   z-index: 20;
   text-align: center;
@@ -106,6 +112,10 @@
   width: 605px;
   max-width: 500px;
   display: none;
+}
+
+.memeDiv:hover .deleteButton {
+  display: block;
 }
 
 .meme-generator {
