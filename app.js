@@ -13,7 +13,7 @@ const memeGenetator = () => {
 
   const memeDiv = document.createElement('div');
   memeDiv.classList = 'memeDiv';
-  
+
   const memeImage = document.createElement('img');
 
   memeImage.src = memeURL;
