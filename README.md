@@ -17,6 +17,9 @@ Your generator should consist of a form that accepts a link to an image, text fo
 
 ## My process
 
+### Display
+![Desktop](./images/MG.png)
+
 ### Built with
 
 - Semantic HTML5 markup
