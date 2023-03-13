@@ -8,7 +8,7 @@
 
 .container {
   background-color: rgb(241, 238, 238);
-  height: 60vh;
+  height: 50vh;
   display: flex;
   flex-direction: column;
 }
@@ -29,20 +29,6 @@
   text-shadow: 1px 1px 8px;
   margin-bottom: 2rem;
 }
-
-.memeDiv {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 1rem;
-  font-family: 'Poppins', sans-serif;
-}
-
-/* .memeDiv:hover {
-  background-color: rgb(183, 0, 255);
-  border-radius: 20px;
-  cursor: pointer;
-} */
 
 .top {
   z-index: 20;
@@ -74,15 +60,21 @@
   stroke-linejoin: round;
 }
 
-#memeOutput {
+.display {
   width: fit-content;
   position: relative;
+  border-radius: 5px;
+  margin: 2rem auto;
+  display: flex;
+}
+
+.memeDiv {
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 5px;
-  border: 2px solid #1088d8;
-  margin-top: 7.7rem;
+  margin: 1rem;
+  font-family: 'Poppins', sans-serif;
+  flex-direction: row;
 }
 
 .memeImg {
@@ -90,7 +82,7 @@
   z-index: 10;
   object-fit: fill;
   border-radius: 20px;
-  border: 2px solid rgb(183, 0, 255);
+  border: 1px solid rgb(184, 180, 185);
   height: 550px;
   width: 600px;
   max-width: 500px;
@@ -100,8 +92,7 @@
 .deleteButton {
   z-index: 50;
   position: absolute;
-  top: 10px;
-  background-color: #b4d7ee;
+  background-color: #bcc7ce;
   opacity: 0.3;
   font-family: 'Poppins', sans-serif;
   border: none;
@@ -112,6 +103,17 @@
   width: 605px;
   max-width: 500px;
   display: none;
+}
+
+.xDelete {
+  font-size: 450px;
+  color: #ee3ec2;
+  z-index: 100;
+  cursor: pointer;
+  position: absolute;
+  top: -60px;
+  left: 90px;
+  margin: 0.4rem 2rem;
 }
 
 .memeDiv:hover .deleteButton {
