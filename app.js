@@ -13,7 +13,7 @@ const memeGenetator = () => {
 
   const memeDiv = document.createElement('div');
   memeDiv.classList = 'memeDiv';
-
+  
   const memeImage = document.createElement('img');
 
   memeImage.src = memeURL;
@@ -28,7 +28,7 @@ const memeGenetator = () => {
   const memeBottomText = document.createElement('h2');
   memeBottomText.classList.add('bottom');
   memeBottomText.innerText = bottomText;
-
+  // memeDisplay.reset();
   memeDiv.append(memeImage, memeTopText, memeBottomText);
   memeDisplay.appendChild(memeDiv);
 
