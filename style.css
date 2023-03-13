@@ -64,7 +64,7 @@
   width: fit-content;
   position: relative;
   border-radius: 5px;
-  border: 2px solid #1088d8;
+  /* border: 2px solid #1088d8; */
   margin: 2rem auto;
   display: flex;
 }
@@ -93,7 +93,7 @@
 .deleteButton {
   z-index: 50;
   position: absolute;
-  background-color: #b4d7ee;
+  background-color: #bcc7ce;
   opacity: 0.3;
   font-family: 'Poppins', sans-serif;
   border: none;
@@ -104,6 +104,17 @@
   width: 605px;
   max-width: 500px;
   display: none;
+}
+
+.xDelete {
+  font-size: 450px;
+  color: #ee3ec2;
+  z-index: 100;
+  cursor: pointer;
+  position: absolute;
+  top: -60px;
+  left: 90px;
+  margin: 0.4rem 2rem;
 }
 
 .memeDiv:hover .deleteButton {

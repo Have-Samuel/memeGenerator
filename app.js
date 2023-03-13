@@ -36,7 +36,13 @@ const memeGenetator = () => {
   const deleteButton = document.createElement('button');
   deleteButton.innerText = '';
   deleteButton.classList.add('deleteButton');
-  // deleteButton.style.display = 'block';
+
+  // X to delete the meme
+  const xDelete = document.createElement('span');
+  xDelete.classList.add('xDelete');
+  xDelete.innerText = 'X';
+  deleteButton.appendChild(xDelete);
+
   memeDiv.appendChild(deleteButton);
 
   deleteButton.addEventListener('click', () => {
@@ -49,6 +55,10 @@ const memeGenetator = () => {
 
 memeForm.addEventListener('submit', (e) => {
   e.preventDefault();
+  // // Generate one meme at a time
+  if (memeDisplay.children.length > 0) {
+    memeDisplay.removeChild(memeDisplay.children[0]);
+  }
 
   memeGenetator();
 });
