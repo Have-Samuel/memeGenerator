@@ -77,7 +77,6 @@
   object-fit: fill;
   border: 1px solid rgb(184, 180, 185);
   height: 550px;
-  /* width: 360px; */
   max-width: 375px;
 }
 
@@ -207,7 +206,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    /* flex-direction: row; */
   }
 
   .memeImg {
