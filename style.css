@@ -77,8 +77,8 @@
   object-fit: fill;
   border: 1px solid rgb(184, 180, 185);
   height: 550px;
-  width: 360px;
-  max-width: 500px;
+  /* width: 360px; */
+  max-width: 375px;
 }
 
 .deleteButton {
@@ -149,6 +149,7 @@
 @media (min-width: 376px) {
   .container {
     background-color: #b48eb9;
+    height: 486px;
   }
 
   .container h1 {
@@ -166,7 +167,6 @@
   }
 
   .meme-generator button {
-    /* display: flex; */
     margin: auto 0 0.5rem auto;
     padding: 0.8rem;
     border-radius: 8px;
@@ -184,6 +184,7 @@
     display: flex;
     flex-direction: column;
     margin-top: 1rem;
+    color: #2d033a;
   }
 
   .meme-generator input {
@@ -192,11 +193,57 @@
     margin-bottom: 1rem;
     margin-top: -2rem;
     border-radius: 5px;
-    /* padding: 0.5rem; */
     border: none;
     width: 86%;
     font-size: 1.2rem;
     outline: none;
   }
-  
+
+  .display {
+    margin: 0 auto;
+  }
+
+  .memeDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* flex-direction: row; */
+  }
+
+  .memeImg {
+    z-index: 10;
+    object-fit: fill;
+    border: 1px solid rgb(184, 180, 185);
+    height: 550px;
+    width: 550px;
+    max-width: 500px;
+  }
+
+  .deleteButton {
+    height: 550px;
+    width: 550px;
+  }
+
+  .xDelete {
+    font-size: 450px;
+    color: #443f43;
+    cursor: pointer;
+    position: absolute;
+    top: -40px;
+    left: 115px;
+  }
+
+  .top {
+    font-size: 3rem;
+    text-shadow: 5px 5px 10px;
+    top: 5px;
+    -webkit-text-stroke: 2.8px #2d033a;
+  }
+
+  .bottom {
+    font-size: 3rem;
+    text-decoration: double;
+    text-shadow: 5px 5px 10px;
+    -webkit-text-stroke: 2.8px #2d033a;
+  }
 }
