@@ -8,7 +8,7 @@
 
 .container {
   background-color: rgb(227, 156, 236);
-  height: 55vh;
+  /* height: 55vh; */
   display: flex;
   flex-direction: column;
 }
@@ -36,30 +36,29 @@
   z-index: 20;
   text-align: center;
   position: absolute;
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   font-family: 'Poppins', sans-serif;
   text-shadow: 5px 5px 8px;
   top: 15px;
   color: antiquewhite;
   -webkit-text-stroke: 2px black;
-  /* width: 500px; */
-  /* height: 500px; */
 }
 
 .bottom {
   /* width: 500px; */
-  height: 500px;
+  /* height: 500px; */
   z-index: 20;
   text-align: center;
   position: absolute;
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   text-decoration: double;
   text-shadow: 5px 5px 8px;
   font-family: 'Poppins', sans-serif;
-  bottom: -420px;
+  /* bottom: -420px; */
   color: antiquewhite;
   -webkit-text-stroke: 2px black;
   stroke-linejoin: round;
+  margin-top: 30.5rem;
 }
 
 .display {
@@ -74,21 +73,17 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  /* font-family: 'Poppins', sans-serif; */
   flex-direction: row;
-    /* height: 550px; */
 }
 
 .memeImg {
   /* position: relative; */
   z-index: 10;
   object-fit: fill;
-  /* border-radius: 20px; */
   border: 1px solid rgb(184, 180, 185);
   height: 550px;
   width: 360px;
   max-width: 500px;
-  /* margin: 0 1rem; */
 }
 
 .deleteButton {
@@ -115,12 +110,12 @@
   cursor: pointer;
   position: absolute;
   top: -60px;
-  left: 60px;
+  left: 40px;
   /* display: flex;
   justify-content: center;
   align-items: center; */
   /* margin: 0.4rem 2rem; */
-  margin-bottom: 9rem;
+  /* margin-bottom: 9rem; */
 }
 
 .memeDiv:hover .deleteButton {
@@ -132,7 +127,7 @@
   flex-direction: column;
   margin: 0.7rem auto;
   width: 80%;
-  font-family: sans-serif;
+  /* font-family: sans-serif; */
   font-size: 1.2rem;
 }
 
@@ -165,6 +160,7 @@
   background-color: #1088d8;
   border: none;
   cursor: pointer;
+  outline: none;
 }
 
 @media (min-width: 376px) {
