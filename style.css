@@ -152,18 +152,51 @@
   }
 
   .container h1 {
-    font-family: 'Manrope', sans-serif;
     font-size: 4rem;
     font-weight: 700;
-    text-align: center;
     text-shadow: 2px 2px 15px;
+    color: #2d033a;
   }
 
   .container p {
-    font-family: 'Poppins', sans-serif;
     font-size: 2rem;
     font-weight: 700;
-    text-align: center;
     text-shadow: 2px 2px 10px;
+    color: #2d033a;
   }
+
+  .meme-generator button {
+    /* display: flex; */
+    margin: auto 0 0.5rem auto;
+    padding: 0.8rem;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    background-color: #6710d8;
+  }
+
+  .meme-generator {
+    display: flex;
+    width: 70%;
+    font-size: 1.2rem;
+  }
+
+  .meme-generator label {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+  }
+
+  .meme-generator input {
+    display: flex;
+    margin-left: 10rem;
+    margin-bottom: 1rem;
+    margin-top: -2rem;
+    border-radius: 5px;
+    /* padding: 0.5rem; */
+    border: none;
+    width: 86%;
+    font-size: 1.2rem;
+    outline: none;
+  }
+  
 }
